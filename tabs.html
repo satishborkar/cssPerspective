@@ -1,0 +1,17 @@
+ <script type="text/javascript" id="+">
+        $(document).ready(function() {
+            $('ul li a').click(function() {
+                tagetDiv = $(this).attr('rel');
+                $('#' + tagetDiv).fadeIn();
+                $('.formContainer').not('#' + tagetDiv).hide();
+            });
+        });
+    </script>
+    
+<ul>
+	<li><a href="#nogo" rel="link1">Link1</a></li>
+	<li><a href="#nogo" rel="link2">Link2</a></li>
+	<li><a href="#nogo"rel="link2">Link3</a></li>
+	<li><a href="#nogo" rel="link4">Link4</a></li>
+	<li><a href="#nogo" rel="link5">Link5</a></li>
+</ul>
